@@ -1,4 +1,5 @@
 .MMM-BackgroundSlideshow .images,
+.MMM-BackgroundSlideshow .image-blur,
 .MMM-BackgroundSlideshow .image,
 .MMM-BackgroundSlideshow .transition,
 .MMM-BackgroundSlideshow .gradient {
@@ -7,6 +8,12 @@
   left: 0;
   height: 100%;
   width: 100%;
+}
+.MMM-BackgroundSlideshow .image-blur {
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  transform: scale(1.1);
 }
 .MMM-BackgroundSlideshow .image {
   background-repeat: no-repeat;

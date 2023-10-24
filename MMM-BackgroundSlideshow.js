@@ -439,6 +439,11 @@ Module.register('MMM-BackgroundSlideshow', {
         transitionDiv.style.animationTimingFunction = this.config.transitionTimingFunction;
       }
 
+      const imageDivBlur = document.createElement('div');
+      imageDivBlur.className = 'image-blur';
+      imageDivBlur.style.backgroundImage = `url("${image.src}")`;
+      transitionDiv.appendChild(imageDivBlur);
+
       const imageDiv = this.createDiv();
       imageDiv.style.backgroundImage = `url("${image.src}")`;
       // imageDiv.style.transform = 'rotate(0deg)';
